@@ -1,0 +1,3 @@
+./recon-all.log
+Total log files scanned: 333
+Errors detected: 1

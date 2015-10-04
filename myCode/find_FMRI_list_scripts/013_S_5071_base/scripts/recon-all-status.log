@@ -1,0 +1,7 @@
+status file for recon-all
+Thu Sep 24 14:05:17 SGT 2015
+#@# Longitudinal Base Subject Creation Thu Sep 24 14:05:17 SGT 2015
+Linux circuv 3.0.101-0.47.55-default #1 SMP Thu May 28 08:25:11 UTC 2015 (dc083ee) x86_64 x86_64 x86_64 GNU/Linux
+
+recon-all -s 013_S_5071_base exited with ERRORS at Thu Sep 24 14:05:28 SGT 2015
+
