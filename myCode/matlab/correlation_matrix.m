@@ -1,5 +1,5 @@
-cd /mnt/eql/yeo1/data/COBRE/procsurffast/COBRE/0040000/bold/002
-x=MRIread('0040000_bld002_rest_reorient_skip_faln_mc_g1000000000_bpss_resid.nii.gz');
+function coe = correlation_matrix(fmri_path)
+x=MRIread(fmri_path);
 % rh_fsavg5=MRIread('rest.pp.sm0.fsaverage5.rh.nii.gz');
 size(x.vol)
 % ConvertRas2Vox([-7, -52, 26]', x.vox2ras)
@@ -17,15 +17,6 @@ seed_normed=Seed-mean(Seed);
 norminator=reshape(reshape(vol_normed,x.height*x.width*x.depth,x.nframes)*(seed_normed.'),x.height,x.width,x.depth);
 size(norminator);
 coe=norminator./sqrt(sum(vol_normed.^2,4).*sum(seed_normed.^2));
-% for i=1:x.height
-%     for j=1:x.width
-%         for k=1:x.depth
-%             coe(i,j,k)=corr2(Seed,squeeze(x.vol(i,j,k,:)));
-%         end
-%     end
-% end
 toc;
-save '/data/users/rens/myCode/coe_0040000_bold.mat' coe;
-% DrawSurfaceMaps(coeMash,'fsaverage5','inflated');
-% ReadNCAvgMesh('lh','fsaverage5','inflated','cortex');
-% avg_mesh=ReadNCAvgMesh('lh','fsaverage5','inflated','cortex');
+% save '/data/users/rens/myCode/coe_0040000_bold.mat' coe;
+end

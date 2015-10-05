@@ -1,0 +1,1 @@
+/data/users/rens/storage/ADNI/preprocess_data/sMRI/ADNI_002_S_5018_MR_MT1__N3m_Br_20121206140514243_S174286_I349889.nii.gz

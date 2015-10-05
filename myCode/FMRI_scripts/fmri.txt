@@ -1,0 +1,1 @@
+/share/users/imganalysis/yeolab/data/ADNI/ADOnly/ADNI_150901_ADOnly/ADNI/130_S_5059/Resting_State_fMRI/2013-08-09_09_00_25.0/S197569/ADNI_130_S_5059_MR_Resting_State_fMRI_br_raw_20130812084244466_5383_S197569_I385034.nii

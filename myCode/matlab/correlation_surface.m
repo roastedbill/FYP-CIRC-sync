@@ -1,6 +1,7 @@
-cd /share/users/imganalysis/yeolab/data/COBRE/procsurffast/COBRE/0040002/surf
-lh_fsavg5=MRIread('lh.0040002_bld002_rest_reorient_skip_faln_mc_g1000000000_bpss_resid_fsaverage6_sm6_fsaverage5.nii.gz');
-rh_fsavg5=MRIread('rh.0040002_bld002_rest_reorient_skip_faln_mc_g1000000000_bpss_resid_fsaverage6_sm6_fsaverage5.nii.gz');
+function [coe_lh, coe_rh] = correlation_surface(smri_id)
+cd /share/users/imganalysis/yeolab/data/COBRE/procsurffast/COBRE/
+lh_fsavg5=MRIread([smri_id '/surf' '/lh.' smri_id '_bld002_rest_reorient_skip_faln_mc_g1000000000_bpss_resid_fsaverage6_sm6_fsaverage5.nii.gz']);
+rh_fsavg5=MRIread([smri_id '/surf' '/rh.' smri_id '_bld002_rest_reorient_skip_faln_mc_g1000000000_bpss_resid_fsaverage6_sm6_fsaverage5.nii.gz']);
 lh_vol=reshape(lh_fsavg5.vol,lh_fsavg5.nvoxels,lh_fsavg5.nframes);
 rh_vol=reshape(rh_fsavg5.vol,rh_fsavg5.nvoxels,rh_fsavg5.nframes);
 lh_avg5_mesh=ReadNCAvgMesh('lh','fsaverage5','inflated','cortex');
@@ -25,7 +26,6 @@ toc
 threshold=-1;
 coe_lh(coe_lh<threshold)=0;
 coe_rh(coe_rh<threshold)=0;
-DrawSurfaceMaps(coe_lh,coe_rh,'fsaverage5','inflated');
-%ReadNCAvgMesh('lh','fsaverage5','inflated','cortex');
-%avg_mesh=ReadNCAvgMesh('lh','fsaverage5','inflated','cortex');
+% DrawSurfaceMaps(coe_lh,coe_rh,'fsaverage5','inflated');
+end
 
