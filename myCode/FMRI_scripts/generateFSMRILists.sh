@@ -1,19 +1,19 @@
 #!/bin/bash
 #######################################################################
-# Generate lists of SMRI raw data      	      #
+# Generate lists of SMRI raw data      	                              #
 # Author: rens                                                        #
 # Date: 3/Oct/2015                                                    #
 #######################################################################
 # Example:
 #  sh preprocessFMRI.sh /share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/SMRI/scripts/lists/ListAfterLongQC.txt
 
-raw_dir="/share/users/imganalysis/yeolab/data/ADNI/ADOnly/ADNI_150901_ADOnly/ADNI"
+compressed_raw_dir="/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/RawDataCompressed"
 preprocessed_smri_dir="/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/SMRI"
 smri_long_qc="/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/SMRI/scripts/lists/ListAfterLongQC.txt"
 fmri_list="/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/FMRI/scripts/fMRI_session_list.txt"
 smri_list="/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/FMRI/scripts/sMRI_session_list.txt"
-cd $raw_dir
-find `pwd` -xdev -iname '*Resting_State_fMRI*.nii' 2>&1 | grep -v 'Permission denied'>$fmri_list
+cd $compressed_raw_dir
+find `pwd` -xdev -iname '*Resting_State_fMRI*.nii.gz' 2>&1 | grep -v 'Permission denied'>$fmri_list
 smri_index_list=$(cat $smri_long_qc)
 smri_index='n'
 smri=""

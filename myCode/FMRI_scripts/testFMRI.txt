@@ -1,1 +1,2 @@
-/data/users/rens/storage/ADNI/preprocess_data/fMRI/ADNI_002_S_5018_MR_Resting_State_fMRI_br_raw_20121112145105135_3672_S174287_I346237.nii.gz
+/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/RawDataCompressed/006_S_4192/Resting_State_fMRI/2011-12-15_14_11_44.0/S133456/ADNI_006_S_4192_MR_Resting_State_fMRI_br_raw_20111216104339008_4135_S133456_I272407.nii.gz
+/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/RawDataCompressed/006_S_4192/Resting_State_fMRI/2011-12-15_14_11_44.0/S133456/ADNI_006_S_4192_MR_Resting_State_fMRI_br_raw_20111216104747202_1750_S133456_I272411.nii.gz

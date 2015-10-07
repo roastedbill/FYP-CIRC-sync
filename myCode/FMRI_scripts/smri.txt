@@ -1,1 +1,1 @@
-
+/share/users/imganalysis/yeolab/data/ADNI/ADOnly/preprocessed/RawDataCompressed/130_S_5059/MT1__N3m/2013-08-09_09_00_25.0/S197563/ADNI_130_S_5059_MR_MT1__N3m_Br_20130909172038045_S197563_I388919.nii.gz

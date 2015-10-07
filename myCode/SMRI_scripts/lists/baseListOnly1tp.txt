@@ -1,0 +1,10 @@
+redo list for crssec structure with only 1 time point
+010_S_5163
+018_S_5074
+018_S_5240
+053_S_5208
+100_S_5106
+130_S_4997
+130_S_5231
+131_S_5138
+136_S_4993
